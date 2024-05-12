@@ -1,6 +1,5 @@
-package codyhuh.menagerieutils;
+package codyhuh.spawnt;
 
-import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.*;
 import net.minecraft.world.level.block.Blocks;
@@ -10,11 +9,11 @@ import net.minecraftforge.event.entity.player.PlayerInteractEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
 
-@Mod(MenagerieUtils.MOD_ID)
-public class MenagerieUtils {
-    public static final String MOD_ID = "menagerieutils";
+@Mod(Spawnt.MOD_ID)
+public class Spawnt {
+    public static final String MOD_ID = "spawnt";
 
-    public MenagerieUtils() {
+    public Spawnt() {
         IEventBus bus = MinecraftForge.EVENT_BUS;
 
         bus.addListener(this::removeSpawnEggUsage);
